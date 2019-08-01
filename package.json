@@ -1,0 +1,52 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "SET NODE_ENV=DEV & electron .",
+    "dist": "electron-builder build -w ",
+    "publish" : " electron-builder build -w -p onTagOrDraft",
+    "make-cert": "electron-builder create-self-signed-cert -p lazyProgrammer "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.3",
+    "electron-builder": "^20.44.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "electron-log": "^3.0.7",
+    "electron-updater": "^4.1.2",
+    "jquery": "^3.4.1",
+    "nedb": "^1.8.0",
+    "popper.js": "^1.15.0",
+    "randomatic": "^3.1.1",
+    "shortid": "^2.2.14"
+  },
+  "build": {
+    "appId": "com.CRM.app",
+    "productName": "CRM",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "nsis": {
+      "oneClick": "false"
+    },
+    "win": {
+      "certificateFile": "private/lazyProgrammer.pfx",
+      "target": "nsis",
+      "publisherName": "lazyProgrammer",
+      "verifyUpdateCodeSignature": "false",
+      "publish": [{
+        "provider" : "github",
+        "token": "c16e7720e3ad45a5bea63e0127a9f0a0e30e34ad"
+      }
+        
+      ]
+    }
+  }
+}

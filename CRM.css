@@ -1,0 +1,816 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav {
+    width: 100%;
+    height: 75px;
+    box-shadow: 0px 7px 6px -7px rgba(0, 0, 0, 0.75);
+    background-color: #4E719D;
+}
+
+.nav h1 {
+    color: white;
+    font-size: 23px;
+    position: relative;
+    top: 23px;
+}
+
+
+#history {
+    left: 790px;
+}
+
+#home {
+    left: 830px;
+}
+
+#add {
+    left: 870px;
+}
+
+
+.search_field {
+
+    position: relative;
+    top: 23px;
+    height: 32px;
+
+    left: 910px;
+    width: 250px;
+    border-radius: 20px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.search_field input {
+    border: none;
+    position: relative;
+    width: 180px;
+    left: 10px;
+    top: 2px;
+    outline: none;
+}
+
+.search_field i{
+    position: relative;
+    top: 2px;
+    color: rgba(101, 101, 230, 0.753);
+    left: 25px;
+
+}
+
+
+/* homepage css*/
+
+
+.remover {
+
+    width: 100%;
+    height: 620px;
+}
+
+.customer_details {
+    position: absolute;
+    top: 95px;
+    width: 1045px;
+    left: 10px;
+    height: 590px;
+    border: 1.5px solid rgb(175, 161, 161);
+    border-radius: 5px;
+}
+
+.update_and_new_details {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 25px;
+    grid-template-areas: 'comp_no comp_no_input date date_input search search search search'
+        'name name_input mobile mobile_input search search search search'
+        'address address_input issue issue_input search search search search'
+        'maker maker_input model model_input fee_amount fee_amount_input payment payment_input'
+        'part_replaced part_replaced_input pending_reason pending_reason_input bal bal_input remark remark_input ';
+}
+
+.read_details {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 25px;
+    grid-template-areas: 'comp_no comp_no_p date date_p search search search search'
+        'name name_p mobile mobile_p search search search search'
+        'address address_p issue issue_p search search search search'
+        'maker maker_p model model_p fee_amount fee_amount_p payment payment_p'
+        'part_replaced part_replaced_p pending_reason pending_reason_p bal bal_p remark remark_p ';
+
+
+}
+
+#comp_no{
+    grid-area: comp_no;
+    padding-left: 10px;
+    
+}
+#date{
+    grid-area: date;
+    padding-left: 10px;
+    
+    
+}
+
+#name{
+    grid-area: name;
+    padding-left: 10px;
+   
+   
+}
+
+#mobile{
+    grid-area: mobile;
+    padding-left: 10px;
+  
+   
+}
+
+#address{
+    grid-area: address; 
+    padding-left: 10px;
+    
+
+}
+
+#issue{
+    grid-area: issue;
+    padding-left: 10px;
+   
+   
+}
+
+#maker{
+    grid-area: maker;
+    padding-left: 10px;
+   
+   
+}
+
+#model{
+    grid-area: model;
+    padding-left: 10px;
+ 
+  
+}
+
+#fee_amount{
+    grid-area: fee_amount;
+    padding-left: 10px;
+    
+}
+
+#payment{
+    grid-area: payment;
+    padding-left: 10px;
+   
+   
+}
+
+#part_replaced{
+    grid-area: part_replaced;
+    padding-left: 10px;
+  
+   
+}
+
+#pending_reason{
+    grid-area: pending_reason;
+    padding-left: 10px;
+  
+  
+}
+
+#bal{
+    grid-area: bal;
+    padding-left: 10px;
+   
+}
+
+#remark{
+    grid-area: remark;
+    padding-left: 10px;
+   
+}
+
+#search{
+    grid-area: search;
+    align-items: stretch;
+   
+}
+
+.search_wrapper{
+    position: relative;
+    border-bottom: 2px solid rgb(175, 161, 161);
+    border-left: 2px solid rgb(175, 161, 161);
+    left: 50px;
+    width: 458px;
+    height: 100%;
+}
+
+#comp_no_p{
+    grid-area: comp_no_p;
+    
+}
+
+#date_p{
+    grid-area: date_p;
+  
+}
+
+#name_p{
+    grid-area: name_p;
+   
+}
+
+#mobile_p{
+    grid-area: mobile_p;
+   
+}
+
+#address_p{
+    grid-area: address_p;
+    height: 100px;
+  
+}
+
+#issue_p{
+    grid-area: issue_p;
+    height: 100px;
+   
+}
+
+#maker_p{
+    grid-area: maker_p;
+   
+}
+
+#model_p{
+    grid-area: model_p;
+   
+}
+
+#payment_p{
+    grid-area: payment_p;
+    padding-left: 30px; 
+}
+
+#fee_amount_p{
+    grid-area: fee_amount_p;
+    padding-left: 30px; 
+}
+
+#part_replaced_p{
+    grid-area: part_replaced_p;
+    height: 100px;
+   
+}
+
+#pending_reason_p{
+    grid-area: pending_reason_p;
+    height: 100px;
+   
+}
+
+#bal_p{
+    grid-area: bal_p;
+  
+}
+
+
+#remark_p{
+    grid-area: remark_p;
+   
+}
+
+
+.read_details p{
+   
+    font-size: 15px;
+    width: 160px;
+    height: 25px;
+    margin-top: 25px;
+}
+
+.read_details h5{
+    font-size: 16px;
+    padding-top: 25px; 
+}
+
+.update_and_new_details h5{
+    font-size: 16px;
+    padding-top: 25px; 
+}
+
+.update_and_new_details input{
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 2px; 
+    font-family: sans-serif;
+    outline-color: rgba(101, 101, 230, 0.753);
+    background-color: rgb(238, 235, 235);
+    width: 160px;
+    height: 25px;
+    margin-top: 25px;
+}
+
+.update_and_new_details textarea{
+    font-size: 15px;
+    width: 160px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    border: none;
+    background-color: rgb(238, 235, 235);
+    height: 25px;
+    outline-color: rgba(101, 101, 230, 0.753);
+    margin-top: 25px;
+    height: 100px;
+}
+.customer_list {
+    position: relative;
+    left: 1070px;
+    top: 20px;
+    width: 290px;
+    height: 590px;
+    border: 1.5px solid rgb(175, 161, 161);
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+
+.customer_data_1 h5 {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.search_field_2{
+    position: relative;
+    border: 1px solid rgba(101, 101, 230, 0.753);
+    left: 120px;
+    top: 20px;
+    width: 220px;
+    border-radius: 20px;
+}
+
+.search_field_2 input{
+   position: relative;
+   border: none;
+   outline: none;
+   left: 12px;
+}
+
+#search_date{
+    position: relative;
+    left: 15px;
+}
+
+#add_icon{
+    position: relative;
+    left: 40px;
+}
+
+.history_result::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.history_result{
+    position: relative;
+    overflow: auto;
+    top: 20px;
+    width: 260px;
+    height: 274px;
+    left: 110px;
+   
+}
+
+.history_1{
+    position: relative;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: auto auto;
+}
+
+.history_1 h5{
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.history_1 i {
+    padding-top: 15px;
+    padding-left: 45px;
+}
+
+.desition_btn_2{
+    display: grid;
+    position: relative;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto;
+    grid-column-gap: 10px; 
+    width: 250px;
+    left: 130px;
+    top: 110px;
+}
+
+#desition_btn_2_save{
+    background-color: rgba(101, 101, 230, 0.753);
+    color: white;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+#desition_btn_2_cancel{
+    border: 1px solid black;
+    background-color: white;
+    color:  black;
+    border-radius: 5px;
+    padding-left: 23px;
+}
+#desition_btn_2_save:hover{
+    box-shadow: 1px 10px 19px -2px rgba(101, 101, 230, 0.753);
+}
+
+#desition_btn_2_cancel:hover{
+    box-shadow: 1px 10px 19px -2px rgba(0, 0, 0, 0.75);
+}
+
+
+
+
+
+/*  historypage css */
+
+
+
+
+.search_field_1 {
+    position: relative;
+    top: 20px;
+    border: 1px solid rgba(101, 101, 230, 0.753);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 220px;
+    padding-left: 10px;
+    border-radius: 20px;
+    left: 30px;
+}
+
+.search_field_1 input {
+    border: none;
+    outline: none;
+}
+
+.search_field_1 i {
+    position: relative;
+    left: 5px;
+    color: rgba(101, 101, 230, 0.753);
+}
+
+.filter {
+    position: relative;
+    left: 270px;
+    display: grid;
+    grid-template-columns: 70px 60px 10px;
+    grid-auto-rows: auto;
+    grid-column-gap: 5px;
+    border: 1px solid rgb(175, 161, 161);
+    width: 160px;
+    bottom: 11px;
+    border-radius: 5px;
+}
+
+.filter h5 {
+    font-size: 15px;
+    align-self: center;
+    justify-self: center;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+.remark_list{
+    position: absolute;
+    background-color: white;
+    display: none;
+    border: 1px solid black;
+    z-index: 1;
+    width: 70px;
+    left: 70px;
+    top: 30px;
+
+}
+.remark_list h5:hover{
+    background-color:  rgba(101, 101, 230, 0.753);
+    color: white;
+}
+
+
+.filter input {
+    outline: none;
+    border: none;
+}
+
+#drop_down_1 {
+    color: rgba(101, 101, 230, 0.753);
+    padding-top: 6px;
+}
+
+
+.recent {
+    user-select: none;
+    position: relative;
+    width: 1305px;
+    top: 15px;
+    left: 30px;
+    height: 520px;
+    border-radius: 5px;
+}
+
+.tab {
+    width: 1304px;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(101, 101, 230, 0.753);
+}
+
+.tab h5 {
+    color: white;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.month_input_field{
+    border: none;
+    background-color: white;
+    width:  100px;
+}
+.month_input_field i {
+    padding-left: 5px;
+    color: rgba(101, 101, 230, 0.753) !important;
+}
+
+
+#month_picker{
+    width:  70px;
+    border-radius: 1px;
+    outline: none;
+}
+
+
+.date_picker{
+    position: relative;
+    display:  grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5px;
+    grid-template-rows: auto;
+    width: 250px;
+    left: 1040px;
+    bottom: 30px;
+   
+}
+
+.date_picker input {
+    padding-left: 5px; 
+    width:  100px;
+    border: none;
+    border-radius: 1px;
+    outline: none;
+}
+.date_picker i {
+    padding-top: 5px;
+    padding-right: 10px; 
+    color:  white;
+}
+
+.month_list{
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    left: 1074px;
+    bottom:  330px;
+    width: 70px;
+    height: 150px ;
+    border-radius: 3px;
+    background-color: white;
+    overflow: auto;
+    display: none;
+}
+
+.month_list h5{
+    color:  black;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.month_list h5:hover{
+    color: white;
+    background-color:  rgba(101, 101, 230, 0.753);
+}
+
+.month_list::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.customer_list_1 {
+    user-select: none;
+    width: 1304px;
+    height: 470px;
+    border-left: 2px solid rgb(175, 161, 161);
+    border-right: 2px solid rgb(175, 161, 161);
+    border-bottom: 2px solid rgb(175, 161, 161);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.customer_data_schema{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgb(175, 161, 161);
+    display:  grid;
+    grid-template-columns: 58px 75px 100px 90px 160px 110px 80px 90px 60px 90px 110px 130px 70px 60px;
+    grid-template-rows: 39px; 
+    grid-column-gap: 2px;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.75);
+   
+}
+
+.customer_data_schema h5{
+    font-size: 13px;
+}
+
+.client_order_list{
+    position: relative;
+    width: 100%;
+    height: 429px;
+    overflow: auto;
+}
+
+.client_order_list::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.no_order_found{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+.order_detail_2{
+    display: grid;
+    grid-template-columns:  58px 75px 100px 90px 160px 110px 80px 90px 60px 90px 110px 130px 70px 60px;
+    grid-column-gap: 2px;
+    position: relative;
+    width: 1297px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-bottom: 207i98ujk ndszpx;
+    border-radius: 2px;
+
+}
+
+.order_detail_2 h5{
+    font-size: 13px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+/*     addPage css    */
+
+
+
+
+.form_card {
+    position: relative;
+    top: 40px;
+    left: 90px;
+    border-radius: 5px;
+    width: 1200px;
+    height: 550px;
+
+}
+
+.right {
+    position: relative;
+    width: 300px;
+    height: 550px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(101, 101, 230, 0.753);
+}
+
+.left {
+    position: relative;
+    width: 900px;
+    left: 300px;
+    bottom: 550px;
+    height: 550px;
+    border-right: 2px solid rgb(175, 161, 161);
+    border-top: 2px solid rgb(175, 161, 161);
+    border-bottom: 2px solid rgb(175, 161, 161);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form {
+    display: grid;
+    position: relative;
+    left: 140px;
+    top: 120px;
+    width: 610px;
+    grid-template-columns: 80px 200px 80px 200px ;
+    grid-template-rows: auto auto auto auto auto ;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+
+.form input {
+    width: 200px;
+    border: none;
+    background-color: rgb(218, 209, 209);
+    border-radius: 5px;
+    outline-color: rgba(101, 101, 230, 0.753);
+}
+
+
+
+.form h5 {
+    font-weight: 450
+}
+
+.form textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(218, 209, 209);
+    outline-color: rgba(101, 101, 230, 0.753);
+}
+
+.desition_btn_1 {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 35px;
+    grid-column-gap: 30px;
+    position: relative;
+    width: 250px;
+    height: 70px;
+    left: 350px;
+    top: 150px;
+}
+
+#desition_btn_1_save {
+    background-color: rgba(101, 101, 230, 0.753);
+    color: white;
+    border-radius: 5px;
+    padding-left: 33px;
+    padding-top: 4px;
+}
+
+#desition_btn_1_save:hover {
+    box-shadow: 1px 10px 19px -2px rgba(101, 101, 230, 0.753);
+}
+
+
+#desition_btn_1_cancel {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 23px;
+    padding-top: 4px;
+}
+
+
+#desition_btn_1_cancel:hover {
+    box-shadow: 1px 10px 19px -2px rgba(0, 0, 0, 0.75);
+}
